@@ -138,6 +138,15 @@
   font-family: 'Yellowtail';
   src: url('../fonts/headers/Yellowtail-Regular.otf');
 }
+h1 {
+  color: #e8d174;
+}
+h2 {
+  color: #bb1515;
+}
+h4 {
+  color: #4d7358;
+}
 #current-time {
   display: block;
   font-weight: bold;
@@ -154,4 +163,7 @@
 }
 img {
   height: 70px;
+}
+.page {
+  background-color: green;
 }

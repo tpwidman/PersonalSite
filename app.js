@@ -9,13 +9,17 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngResource']);
         templateUrl : 'views/about/about.html',
         controller  : 'aboutCtrl'
       })
-      .when('/contacts', {
+      .when('/contact', {
         templateUrl : 'views/contact/contact.html',
         controller : 'contactCtrl'
       })
       .when('/blog', {
         templateUrl : 'views/blog/blog.html',
         controller: 'blogCtrl'
+      })
+      .when('/stuff', {
+      templateUrl : 'views/stuff/stuff.html',
+      controller: 'stuffCtrl'
       })
       .otherwise({
         redirectTo: '/home'
