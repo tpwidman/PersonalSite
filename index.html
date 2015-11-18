@@ -6,16 +6,15 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="styles.css">
 	</head>
-	<body ng-controller="navController">
+	<body>
 		<div class="container">
-   				<ul class="nav nav-list">
+   				<ul class="nav" ng-controller="navController">
 					<li ng-class="{ active: isActive('/')}"><a href='#/home'>Home</a></li>
 					<li ng-class="{ active: isActive('/about')}"><a href='#/about'>About</a></li>
 					<li ng-class="{ active: isActive('/contact')}"><a href='#/contact'>Contact</a></li>
 					<li ng-class="{ active: isActive('/blog')}"><a href='#/blog'>Blog</a></li>
 					<li ng-class="{ active: isActive('/stuff')}"><a href='#/stuff'>Stuff</a></li>
    				</ul>
-</div>
 		</div>
 <div id="main">	
 	<div ng-view></div>
