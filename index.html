@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html x-ng-app="myApp">
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body ng-controller="navController">
+		<div class="container">
+			<div class="well sidebar-nav" ng-app="navList">
+   				<ul class="nav nav-list">
+					<li ng-class="{ active: isActive('/')}"><a href='#/home'>Home</a></li>
+					<li ng-class="{ active: isActive('/about')}"><a href='#/about'>About</a></li>
+					<li ng-class="{ active: isActive('/contact')}"><a href='#/contact'>Contact</a></li>
+					<li ng-class="{ active: isActive('/blog')}"><a href='#/blog'>Blog</a></li>
+					<li ng-class="{ active: isActive('/stuff')}"><a href='#/stuff'>Stuff</a></li>
+   				</ul>
+</div>
+		</div>
+<div id="main">	
+	<div ng-view></div>
+</div>
+<div class="footer">
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="https://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="app.js"></script>
+	<script src="js/factory/blog.factory.js"></script>
+	</body>
+</html>
