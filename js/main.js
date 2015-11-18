@@ -5,10 +5,3 @@ function navController($scope, $location)
         return viewLocation === $location.path();
     };
 }
-
-function myAppController($scope, $location) 
-{ 
-    $scope.isActive = function (viewLocation) { 
-        return viewLocation === $location.path();
-    };
-}
