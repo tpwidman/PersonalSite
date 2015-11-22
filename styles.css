@@ -163,7 +163,5 @@ h4 {
 }
 img {
   height: 70px;
-}
-.page {
-  background-color: green;
+  float: center;
 }

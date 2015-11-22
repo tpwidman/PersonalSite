@@ -43,8 +43,28 @@ function displayTime() {
     context.stroke();
 }
 context.clearRect(0, 0, canvas.width, canvas.height);
+// Draw background
 
-drawArm(h / 12, 10, 0.50, '#6b4423'); // Hour
+	for (var i = 0; i < 12; i++)
+	{
+		var innerDist		= (i % 3) ? 0.75 : 0.7;
+		var outerDist		= (i % 3) ? 0.95 : 1.0;
+		context.lineWidth 	= (i % 3) ? 4 : 10;
+		context.strokeStyle = '#999999';
+		
+		var armRadians = (Math.TAU * (i/12)) - (Math.TAU/4);
+		var x1 = clockX + Math.cos(armRadians) * (innerDist * clockRadius);
+		var y1 = clockY + Math.sin(armRadians) * (innerDist * clockRadius);
+		var x2 = clockX + Math.cos(armRadians) * (outerDist * clockRadius);
+		var y2 = clockY + Math.sin(armRadians) * (outerDist * clockRadius);
+		
+		context.beginPath();
+		context.moveTo(x1, y1); // Start at the center
+		context.lineTo(x2, y2); // Draw a line outwards
+		context.stroke();
+	}
+
+drawArm(h / 12, 5, 0.50, '#2a334f'); // Hour
 drawArm(m / 60,  4, 0.75, '#2a334f'); // Minute
 drawArm(s / 60,  2, 1.00, '#bb1515'); // Second
 }

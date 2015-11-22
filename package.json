@@ -2,7 +2,7 @@
   "name": "myApp",
   "private": true,
   "version": "0.0.0",
-  "description": "This is a blank web app",
+  "description": "This is my personal page",
   "license": "MIT",
   	"dependencies": {
 		"less": "latest"
