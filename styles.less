@@ -4,6 +4,10 @@
 
 // /* Small devices (tablets, 768px and up) */
 // @media (min-width: @screen-sm-min) {
+hr{
+	width:100%;
+	border:solid black .15em;
+}
 .top-nav{
 	display:flex;
 	justify-content: center;
@@ -12,12 +16,26 @@
 	display:flex;
 	justify-content: center;
 }	
+#current-time {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 200px;
+	padding: 10px;
+	}
+#clock {
+	padding: 10px;
+	border:3px solid #ac8f57;
+	background-color: #e0cda7;
+	position:absolute;
+	float:right;
+	}
 .footer{
 	position:absolute;
 	bottom:0;
 	width:100%;
 }
-	
 // }
 
 // /* Medium devices (desktops, 992px and up) */
@@ -34,6 +52,5 @@
 // }
 
 @import "views/about/about.less";
-@import "views/blog/blog.less";
 @import "views/stuff/stuff.less";
 @import "views/home/home.less";
