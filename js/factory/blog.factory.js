@@ -7,7 +7,7 @@ myApp.factory('Parse', ['$resource', function ($resource) {
             };
 
          var Member = $resource('https://api.parse.com/1/classes/BlogPosts/:Id', {}, 
-                 {
+                {
                 'query': {
                     headers: reqHeaders
                 },
