@@ -154,7 +154,6 @@ hr {
   float: right;
 }
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -179,7 +178,7 @@ h4 {
   font-family: 'Quicksand-Regular';
 }
 h1 {
-  color: #4d7358;
+  color: #2a334f;
   font-family: 'Yanone-Bold';
   font-size: 2em;
   text-transform: uppercase;
