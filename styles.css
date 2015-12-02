@@ -127,8 +127,8 @@
   src: url('/assets/fonts/headers/Yanone/YanoneKaffeesatz-Light.otf');
 }
 hr {
-  width: 100%;
-  border: solid black .15em;
+  width: 60%;
+  justify-content: center;
 }
 .top-nav {
   display: flex;
@@ -183,4 +183,12 @@ h1 {
 }
 .blog {
   font-family: 'Woodford';
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: .5em;
 }
