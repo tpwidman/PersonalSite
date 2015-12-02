@@ -158,6 +158,10 @@ hr {
   bottom: 0;
   width: 100%;
 }
+h3 {
+  color: #2a334f;
+  font-family: 'Raleway';
+}
 h6 {
   color: #6b4423;
   font-family: 'Woodford-Italic';

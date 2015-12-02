@@ -16,7 +16,7 @@
     "prestart": "npm install",
     "build": "npm run less",
     "less": "lessc styles/styles.less styles/styles.css",
-    "watch:less": "nodemon -q -w styles -e less --exec npm run less",
+    "watch:less": "nodemon -q -w styles -e less -x npm run less",
     "start": "http-server -a localhost -p 8000 -c-1",
     "watch": "npm run watch:less"
   }
