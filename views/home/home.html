@@ -1,22 +1,25 @@
 <h1>Here are some thoughts.</h1>
 <div class="blog">
 	<div class="entrycontainer">
-			<div class="content">
-				   <p>    After a long needed break, I'm happy to say that I'm back into some cool projects.
-                   The job search is still going great, but really what I've been wanting to do is 
-                   get back into coding with learning Ruby and Node.js. I'll use this blog to keep everyone
-                   updated on what I'm doing. I think this week I'll try to finish up my Amazon Echo skill
-                   and start learning about this Raspberry Pi that I got for Christmas this year. David, Danny,
-                   and I have been working on a Catan variant scenario which is really exciting.</p>
-                   <p>    So, expect another post by the end of the week on those things. I've been thinking of making
-                   videos about programming and home projects, but I only want to do that if there is enough
-                   interest. If you have an idea for a project or if you want me to make you a
-                   website, I'd love to help. Either contact me via email or post your ideas in the comments below.
-                   <br>
-                   Also, my good friend Walter notified me earlier today that the next ITAC Javascript meetup
-                   is scheduled for February 11th.
-                </p>
-			</div>
+        <div class="container">
+            <h3>First post!</h3>
+        </div>
+        <div class="content">
+                <p>    After a long needed break, I'm happy to say that I'm back into some cool projects.
+                The job search is still going great, but really what I've been wanting to do is 
+                get back into coding with learning Ruby and Node.js. I'll use this blog to keep everyone
+                updated on what I'm doing. I think this week I'll try to finish up my Amazon Echo skill
+                and start learning about this Raspberry Pi that I got for Christmas this year. David, Danny,
+                and I have been working on a Catan variant scenario which is really exciting.</p>
+                <p>    So, expect another post by the end of the week on those things. I've been thinking of making
+                videos about programming and home projects, but I only want to do that if there is enough
+                interest. If you have an idea for a project or if you want me to make you a
+                website, I'd love to help. Either contact me via email or post your ideas in the comments below.
+                <br>
+                Also, my good friend Walter notified me earlier today that the next ITAC Javascript meetup
+                is scheduled for February 11th.
+            </p>
+        </div>
         <div class="commentsection">
             <div class="postForm col-md-8 col-md-offset-2">
                 <div class="user">
@@ -31,14 +34,13 @@
 	</div>
     <hr>
 </div>
-<div ng-controller="TimeCtrl">
-    <input type="button" value="What time is it?" ng-click="MakeTimeVisible=!MakeTimeVisible"/>
-    <div ng-hide="MakeTimeVisible">
+<div ng-controller="timeCtrl">
+    <a class="btn btn-primary" href="#" ng-click="time = !time" ng-class="{ active: time }">What time is it?</a>
+    <div ng-show="time">
         <div id="current-time">12:00:00 AM</div>
             <canvas id="clock" width="200" height="200">
                     If you can see this message, your browser does not support canvas 
                     and needs an update. Sorry. :(
             </canvas>
     </div>
-    <div ng-show="MakeTimeVisible"></div>
 </div>

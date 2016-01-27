@@ -1,3 +1,3 @@
-function TimeCtrl($scope){
-    $scope.MakeTimeVisible=!$scope.MakeTimeVisible;           
-}
+myApp.controller('timeCtrl', function($scope) {
+    $scope.time = false;
+});

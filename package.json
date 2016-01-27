@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "description": "This is my personal page",
   "license": "MIT",
-  	"dependencies": {
-		"less": "latest"
-	},
+  "dependencies": {
+    "less": "latest",
+    "ng-resource": "^1.3.2"
+  },
   "devDependencies": {
     "http-server": "^0.6.1",
     "watchify": "latest",

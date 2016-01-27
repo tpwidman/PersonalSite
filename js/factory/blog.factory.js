@@ -1,5 +1,5 @@
 myApp.factory('Parse', ['$resource', function ($resource) {
-    
+
 	var reqHeaders = {
                 'X-Parse-Application-Id': "6BU1cXCRDzdoRmiXBxdkg4dqLPELeM9n2vtfnuvX",
                 'X-Parse-REST-API-Key': "KjqeeFdw16PaXuRV7f26cUegmInDJm8VoH2aFSNX",
