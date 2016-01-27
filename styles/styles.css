@@ -168,7 +168,7 @@ h6 {
   text-transform: uppercase;
   text-align: center;
 }
-img {
+.profile {
   width: 100%;
   float: center;
   border-radius: 50%;
@@ -200,4 +200,7 @@ h1 {
 }
 .content {
   background-color: #f1eee3;
+}
+p {
+  text-indent: 40px;
 }

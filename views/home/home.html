@@ -1,48 +1,44 @@
 <h1>Here are some thoughts.</h1>
 <div class="blog">
-	<div class="entry">
+	<div class="entrycontainer">
 			<div class="content">
-				<p>Nam efficitur leo at velit pretium, a cursus sem mattis. Nunc in metus mi. Pellentesque tincidunt blandit nunc, a cursus neque. Praesent nunc odio, condimentum vel massa eu, sodales viverra neque. Ut posuere eget tellus a posuere. Donec ullamcorper, orci ac tincidunt sodales, sem arcu rutrum mi, eu aliquet risus libero id dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed velit felis.
-				</p>
-				<p>Nam et neque non quam auctor ornare ac at nibh. Curabitur finibus velit eu velit pharetra rutrum. Fusce volutpat leo nec urna venenatis accumsan. Donec ex elit, bibendum nec commodo vel, elementum a magna. Phasellus eleifend diam placerat odio commodo, non malesuada magna efficitur. Suspendisse quis accumsan ipsum. Duis pellentesque molestie massa et sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce pellentesque molestie nunc eget consequat. In elit tortor, varius a efficitur sed, varius ut ligula. Vestibulum vel interdum augue, ac auctor arcu. Praesent dictum ligula nisl, in ultrices ex sagittis vel.</p>
+				   <p>    After a long needed break, I'm happy to say that I'm back into some cool projects.
+                   The job search is still going great, but really what I've been wanting to do is 
+                   get back into coding with learning Ruby and Node.js. I'll use this blog to keep everyone
+                   updated on what I'm doing. I think this week I'll try to finish up my Amazon Echo skill
+                   and start learning about this Raspberry Pi that I got for Christmas this year. David, Danny,
+                   and I have been working on a Catan variant scenario which is really exciting.</p>
+                   <p>    So, expect another post by the end of the week on those things. I've been thinking of making
+                   videos about programming and home projects, but I only want to do that if there is enough
+                   interest. If you have an idea for a project or if you want me to make you a
+                   website, I'd love to help. Either contact me via email or post your ideas in the comments below.
+                   <br>
+                   Also, my good friend Walter notified me earlier today that the next ITAC Javascript meetup
+                   is scheduled for February 11th.
+                </p>
 			</div>
-		<div class="flex-container">
-			<input type="text" name="Name" placeholder="Name">
-			<textarea rows="4" cols="50" placeholder="Comment"></textarea>
-		</div>
+        <div class="commentsection">
+            <div class="postForm col-md-8 col-md-offset-2">
+                <div class="user">
+                    Name: <input type= "text" ng-model="author">
+                </div>
+                <div class="form-group">
+                <textarea class="form-control status-box" rows="2" placeholder="What's on your mind?" ng-model="content"></textarea>
+                </div>
+                <button class="btn btn-primary" ng-click="post('/')">Post</button>
+            </div>
+        </div>
 	</div>
-	<hr>
-	<div class="entry">
-		<div class="content">
-			<p>Praesent non dignissim leo. Cras fermentum ligula eget augue dictum placerat. Donec porta, urna eu aliquam pulvinar, felis neque cursus mi, ac finibus nisl nibh nec quam. Aenean placerat dictum iaculis. In interdum dapibus aliquet. Pellentesque consectetur dui sit amet mauris condimentum scelerisque. Maecenas non purus id arcu convallis iaculis sed id risus. Donec dui massa, iaculis ut nibh vel, maximus fermentum lorem. Cras elementum porta euismod. Suspendisse potenti. Pellentesque imperdiet, urna ut posuere lobortis, ligula odio dapibus tortor, a euismod leo urna eget sapien. Etiam massa lorem, scelerisque in varius a, sagittis nec nulla. Etiam viverra nulla in condimentum tincidunt.
-			</p>
-			<p>Pellentesque scelerisque arcu porttitor ultrices laoreet. Nam cursus quis mauris sit amet ultricies. Nulla vestibulum mauris ac consectetur pretium. Nunc in placerat eros. Phasellus ornare faucibus est a gravida. Pellentesque pulvinar ante eget bibendum mattis. Nullam nec velit et justo dignissim pretium. Suspendisse nec ipsum a nisl interdum aliquet id eget nibh. Vestibulum quis euismod arcu. Nunc porta lectus et lectus mollis scelerisque. Suspendisse potenti.
-			</p>
-		</div>
-		<div class="flex-container row">
-			<div class="col-md-8">			
-				<input type="text" name="Name" placeholder="Name">
-				<textarea rows="4" cols="50" placeholder="Comment"></textarea>
-			</div>
-			<div class="col-md-4 share-options">
-				<i class="fa fa-facebook-square"></i>
-				<i class="fa fa-reddit-square"></i>
-				<i class="fa fa-linkedin-square"></i>
-			</div>
-		</div>
-	</div>
-	<hr>
-	<div class="entry">
-		<div class="content">
-			<p>Praesent non dignissim leo. Cras fermentum ligula eget augue dictum placerat. Donec porta, urna eu aliquam pulvinar, felis neque cursus mi, ac finibus nisl nibh nec quam. Aenean placerat dictum iaculis. In interdum dapibus aliquet. Pellentesque consectetur dui sit amet mauris condimentum scelerisque. Maecenas non purus id arcu convallis iaculis sed id risus. Donec dui massa, iaculis ut nibh vel, maximus fermentum lorem. Cras elementum porta euismod. Suspendisse potenti. Pellentesque imperdiet, urna ut posuere lobortis, ligula odio dapibus tortor, a euismod leo urna eget sapien. Etiam massa lorem, scelerisque in varius a, sagittis nec nulla. Etiam viverra nulla in condimentum tincidunt.
-			</p>
-			<p>Pellentesque scelerisque arcu porttitor ultrices laoreet. Nam cursus quis mauris sit amet ultricies. Nulla vestibulum mauris ac consectetur pretium. Nunc in placerat eros. Phasellus ornare faucibus est a gravida. Pellentesque pulvinar ante eget bibendum mattis. Nullam nec velit et justo dignissim pretium. Suspendisse nec ipsum a nisl interdum aliquet id eget nibh. Vestibulum quis euismod arcu. Nunc porta lectus et lectus mollis scelerisque. Suspendisse potenti.
-			</p>
-		</div>
-		<div class="flex-container">
-			<input type="text" name="Name" placeholder="Name">
-			<textarea rows="4" cols="50" placeholder="Comments"></textarea>
-		</div>
-	</div>
-	<hr>
+    <hr>
+</div>
+<div ng-controller="TimeCtrl">
+    <input type="button" value="What time is it?" ng-click="MakeTimeVisible=!MakeTimeVisible"/>
+    <div ng-hide="MakeTimeVisible">
+        <div id="current-time">12:00:00 AM</div>
+            <canvas id="clock" width="200" height="200">
+                    If you can see this message, your browser does not support canvas 
+                    and needs an update. Sorry. :(
+            </canvas>
+    </div>
+    <div ng-show="MakeTimeVisible"></div>
 </div>
