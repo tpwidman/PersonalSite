@@ -195,3 +195,9 @@ h1 {
   flex-direction: column;
   padding-top: .5em;
 }
+.entry {
+  background-color: #bb1515;
+}
+.content {
+  background-color: #f1eee3;
+}
