@@ -1,4 +1,6 @@
-<h1>Here are some thoughts.</h1>
+<div class="header">
+    <h4>Here are some thoughts.</h4>
+</div>
 <div class="blog">
 	<div class="postcontainer">
         <div class="container">           
@@ -22,15 +24,19 @@
                     is scheduled for February 11th.
                 </p>
             </div>
-            <div class="commentsection">
-                <div class="postForm col-md-8 col-md-offset-2">
-                    <div class="user">
-                        Name: <input type= "text" ng-model="author">
+            <div ng-controller="homeCtrl">
+                <button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Comment</button>
+                <hr>
+                <div class="commentsection" uib-collapse="isCollapsed">
+                    <div class="postForm col-md-8 col-md-offset-2 well well-lg">
+                        <div class="user">
+                            Name: <input type= "text" ng-model="author">
+                        </div>
+                        <div class="form-group">
+                            Comment: <textarea class="form-control status-box" rows="4" placeholder="What's on your mind?" ng-model="content"></textarea>
+                        </div>
+                        <button class="btn btn-primary" ng-click="post('/')">Post</button>
                     </div>
-                    <div class="form-group">
-                        Comment: <textarea class="form-control status-box" rows="2" placeholder="What's on your mind?" ng-model="content"></textarea>
-                    </div>
-                    <button class="btn btn-primary" ng-click="post('/')">Post</button>
                 </div>
             </div>
         </div>
