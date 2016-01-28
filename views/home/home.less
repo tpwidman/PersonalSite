@@ -1,21 +1,30 @@
 h1{
-	color:@navy;
+	color:@green;
 	font-family:'Yanone-Bold';
 	font-size:2em;
 	text-transform: uppercase;
 	text-align: center;
 }
-.blog{
-	font-family:'Woodford';
-	padding-left:1.5em;
-	padding-right:1.5em;
+h3{
+    color:@navy;
+    text-decoration: underline;
 }
-.flex-container{
-	display:flex;
-	justify-content: center;
-	flex-direction: column;
-	padding-top:.5em;
+
+.fixed{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    
 }
+.content{
+    font-family:'Woodford';
+}
+.postcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .entry{
 	background-color:@red;
 }
@@ -25,6 +34,10 @@ h1{
 p{
     text-indent: 40px;
 }
+
+
+
+
 
 /* when hiding the thing */
 .ng-hide-add         { 
