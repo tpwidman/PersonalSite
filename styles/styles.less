@@ -1,6 +1,5 @@
 @import "styles/typography.less";
 @import "styles/variables.less";
-@import "styles/long-shadow.less";
 
 // /* Small devices (tablets, 768px and up) */
 // @media (min-width: @screen-sm-min) {
@@ -11,10 +10,17 @@ hr{
 .top-nav{
 	display:flex;
 	justify-content: center;
-}	
+}
+.nav {
+    font-family: 'Woodford';
+}
+
 .bottom-nav{
 	display:flex;
 	justify-content: center;
+}
+a{
+    color:@green;
 }	
 #current-time {
 	display: block;
@@ -51,5 +57,5 @@ hr{
 // }
 @import "views/contact/contact.less";
 @import "views/about/about.less";
-@import "views/stuff/stuff.less";
+@import "views/projects/projects.less";
 @import "views/home/home.less";

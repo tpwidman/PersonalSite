@@ -134,9 +134,15 @@ hr {
   display: flex;
   justify-content: center;
 }
+.nav {
+  font-family: 'Woodford';
+}
 .bottom-nav {
   display: flex;
   justify-content: center;
+}
+a {
+  color: #4d7358;
 }
 #current-time {
   display: block;
@@ -161,34 +167,49 @@ h3 {
   color: #2a334f;
   font-family: 'Raleway';
 }
-h6 {
+h1 {
   color: #6b4423;
-  font-family: 'Woodford-Italic';
+  font-family: 'Woodford';
   font-size: 2em;
-  text-transform: uppercase;
   text-align: center;
 }
-.profile {
-  width: 100%;
+.row img .profile {
+  height: 90%;
+  width: 90%;
   float: center;
   border-radius: 50%;
 }
-h4 {
-  color: #4d7358;
-  font-family: 'Quicksand-Regular';
-}
-.container {
-  flex-direction: row;
-  justify-content: space-around;
+.left {
+  display: flex;
+  justify-content: center;
 }
 h4 {
   color: #4d7358;
   font-family: 'Quicksand-Regular';
-  font-size: 1em;
+}
+.row img {
+  display: flex;
+  height: 15em;
+}
+.header {
+  text-align: center;
+}
+h1 {
+  font-size: 2em;
+  font-family: 'Woodford';
 }
 h3 {
   color: #2a334f;
+  font-family: 'Woodford';
   text-decoration: underline;
+}
+h4 {
+  color: #2a334f;
+  font-family: 'Quicksand-Regular';
+  font-size: 1em;
+}
+h5 {
+  font-family: 'Roboto-Light';
 }
 .fixed {
   position: fixed;
@@ -206,11 +227,17 @@ h3 {
 .entry {
   background-color: #bb1515;
 }
+.user {
+  font-family: 'Woodford';
+}
+.form-group {
+  font-family: 'Woodford';
+}
 .content {
   background-color: #f1eee3;
 }
-p {
-  text-indent: 40px;
+.content p {
+  text-indent: 35px;
 }
 /* when hiding the thing */
 .ng-hide-add {

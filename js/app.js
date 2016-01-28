@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute', 'ngResource','angular-animate','ui.bootstrap'])
+var myApp = angular.module('myApp', ['ngRoute', 'ngResource'])
     myApp.config(function ($routeProvider, $locationProvider) {
         $routeProvider
         .when('/home', {
@@ -16,10 +16,10 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngResource','angular-animate','
             templateUrl : 'views/contact/contact.html',
             controller : 'contactCtrl'
         })
-        .when('/stuff', {
-            title: 'Stuff',
-            templateUrl : 'views/stuff/stuff.html',
-            controller: 'stuffCtrl'
+        .when('/projects', {
+            title: 'Projects',
+            templateUrl : 'views/projects/projects.html',
+            controller: 'projectsCtrl'
         })
         .otherwise({
             redirectTo: '/home'
