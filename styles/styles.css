@@ -167,13 +167,24 @@ h3 {
   color: #2a334f;
   font-family: 'Raleway';
 }
+.submit {
+  display: flex;
+  justify-content: center;
+}
+.spacing {
+  padding: 3em;
+  display: inline-block;
+}
+.row {
+  margin: auto;
+}
 h1 {
   color: #6b4423;
   font-family: 'Woodford';
   font-size: 2em;
   text-align: center;
 }
-.row img .profile {
+.row .profile img {
   height: 90%;
   width: 90%;
   float: center;
@@ -190,6 +201,9 @@ h4 {
 .row img {
   display: flex;
   height: 15em;
+}
+.container-fluid {
+  display: flex;
 }
 .header {
   text-align: center;
@@ -238,6 +252,10 @@ h5 {
 }
 .content p {
   text-indent: 35px;
+}
+.comment {
+  list-style-type: none;
+  border-top: solid thick #4d7358;
 }
 /* when hiding the thing */
 .ng-hide-add {

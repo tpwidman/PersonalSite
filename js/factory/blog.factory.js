@@ -6,7 +6,7 @@ myApp.factory('Parse', ['$resource', function ($resource) {
                 "Content-Type": "application/json"
             };
 
-         var Member = $resource('https://api.parse.com/1/classes/BlogPosts/:Id', {}, 
+         var comment = $resource('https://api.parse.com/1/classes/BlogPosts/:Id', {}, 
                 {
                 'query': {
                     headers: reqHeaders
@@ -31,5 +31,5 @@ myApp.factory('Parse', ['$resource', function ($resource) {
                 }
             });
 
-        return Member;
+        return comment;
 }]);
