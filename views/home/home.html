@@ -26,10 +26,11 @@
                 </p>
             </div>
             <div>
-                <li class="comments" ng-repeat="comment in comments">
+                <li class="comments well well-g" ng-repeat="comment in comments">
                     {{comment.name}} - {{comment.date}}
                     {{comment.content}}
                 </li>
+                <hr>
             </div>
             <div ng-controller="homeCtrl">
                 <button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Comment</button>
